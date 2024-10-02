@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "ChemicalName": "Acetone",
+    "Vender": "Sigma-Aldrich",
+    "Density": 0.784,
+    "Viscosity": 0.32,
+    "Packaging": "Bottle",
+    "PackSize": 1,
+    "Unit": "L",
+    "Quantity": 100
+  },
+  {
+    "id": 2,
+    "ChemicalName": "Methanol",
+    "Vender": "Thermo Fisher",
+    "Density": 0.791,
+    "Viscosity": 0.55,
+    "Packaging": "Bottle",
+    "PackSize": 2,
+    "Unit": "L",
+    "Quantity": 150
+  },
+  {
+    "id": 3,
+    "ChemicalName": "Ethanol",
+    "Vender": "Merck",
+    "Density": 0.789,
+    "Viscosity": 1.2,
+    "Packaging": "Drum",
+    "PackSize": 5,
+    "Unit": "L",
+    "Quantity": 200
+  },
+  {
+    "id": 4,
+    "ChemicalName": "Benzene",
+    "Vender": "Sigma-Aldrich",
+    "Density": 0.876,
+    "Viscosity": 0.65,
+    "Packaging": "Canister",
+    "PackSize": 25,
+    "Unit": "L",
+    "Quantity": 300
+  },
+  {
+    "id": 5,
+    "ChemicalName": "Toluene",
+    "Vender": "Fisher Scientific",
+    "Density": 0.867,
+    "Viscosity": 0.59,
+    "Packaging": "Canister",
+    "PackSize": 10,
+    "Unit": "L",
+    "Quantity": 400
+  },
+  {
+    "id": 6,
+    "ChemicalName": "Sulfuric Acid",
+    "Vender": "Merck",
+    "Density": 1.83,
+    "Viscosity": 26.7,
+    "Packaging": "Bottle",
+    "PackSize": 500,
+    "Unit": "L",
+    "Quantity": 80
+  },
+  {
+    "id": 7,
+    "ChemicalName": "Hydrochloric Acid",
+    "Vender": "Sigma-Aldrich",
+    "Density": 1.18,
+    "Viscosity": 1.9,
+    "Packaging": "Bottle",
+    "PackSize": 1,
+    "Unit": "L",
+    "Quantity": 500
+  },
+  {
+    "id": 8,
+    "ChemicalName": "Sodium Hydroxide",
+    "Vender": "Thermo Fisher",
+    "Density": 2.13,
+    "Viscosity": 78,
+    "Packaging": "Plastic Bottle",
+    "PackSize": 500,
+    "Unit": "Kg",
+    "Quantity": 50
+  },
+  {
+    "id": 9,
+    "ChemicalName": "Ammonium Hydroxide",
+    "Vender": "VWR Chemicals",
+    "Density": 0.91,
+    "Viscosity": 1.9,
+    "Packaging": "Plastic Bottle",
+    "PackSize": 1,
+    "Unit": "L",
+    "Quantity": 150
+  },
+  {
+    "id": 10,
+    "ChemicalName": "Acetic Acid",
+    "Vender": "Sigma-Aldrich",
+    "Density": 1.05,
+    "Viscosity": 1.22,
+    "Packaging": "Bottle",
+    "PackSize": 500,
+    "Unit": "L",
+    "Quantity": 300
+  },
+  {
+    "id": 11,
+    "ChemicalName": "Nitric Acid",
+    "Vender": "Fisher Scientific",
+    "Density": 1.51,
+    "Viscosity": 2.3,
+    "Packaging": "Bottle",
+    "PackSize": 1,
+    "Unit": "L",
+    "Quantity": 100
+  },
+  {
+    "id": 12,
+    "ChemicalName": "Chloroform",
+    "Vender": "Merck",
+    "Density": 1.48,
+    "Viscosity": 0.56,
+    "Packaging": "Bottle",
+    "PackSize": 500,
+    "Unit": "L",
+    "Quantity": 200
+  },
+  {
+    "id": 13,
+    "ChemicalName": "Hexane",
+    "Vender": "Thermo Fisher",
+    "Density": 0.654,
+    "Viscosity": 0.31,
+    "Packaging": "Canister",
+    "PackSize": 5,
+    "Unit": "L",
+    "Quantity": 250
+  },
+  {
+    "id": 14,
+    "ChemicalName": "Sodium Chloride",
+    "Vender": "VWR Chemicals",
+    "Density": 2.16,
+    "Viscosity": 0,
+    "Packaging": "Bag",
+    "PackSize": 1000,
+    "Unit": "kg",
+    "Quantity": 350
+  },
+  {
+    "id": 15,
+    "ChemicalName": "Potassium Hydroxide",
+    "Vender": "Fisher Scientific",
+    "Density": 2.12,
+    "Viscosity": 78,
+    "Packaging": "Bottle",
+    "PackSize": 500,
+    "Unit": "kg",
+    "Quantity": 400
+  }
+]

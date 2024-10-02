@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dyanmic Table</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- xls library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.3/xlsx.full.min.js"></script>
+  </head>
+  <body>
+    <div
+      id="container"
+      class="relative xl:ml-64 xl:mt-20 md:justify-center md:items-center md:mt-20 sm:mt-20 sm:items-center"
+    >
+      <div
+        id="icons"
+        class="space-x-3 flex justify-start items-center flex-wrap"
+      >
+        <button id="add">
+          <img src="./images/plus-sign.png" alt="add" class="w-6" />
+        </button>
+        <button id="up">
+          <img src="./images/up-arrow.png" alt="up" class="w-6" />
+        </button>
+        <button id="down">
+          <img src="./images/down-arrow.png" alt="down" class="w-6" />
+        </button>
+        <button id="delete">
+          <img src="./images/delete.png" alt="delete" class="w-6" />
+        </button>
+        <button id="refresh">
+          <img src="./images/refresh.png" alt="refresh" class="w-6" />
+        </button>
+        <button id="save">
+          <img src="./images/save.png" alt="save" class="w-6" />
+        </button>
+        <button id="download">
+          <img src="./images/downloading.png" alt="download" class="w-6" />
+        </button>
+      </div>
+
+      <table id="table" class="">
+        <thead class="bg-gray-300" id="table-header">
+          <tr class="poppins-bold">
+            <th>
+              <button
+                id="Chemical"
+                data-field="ChemicalName"
+                class="flex items-center space-x-2 px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded-lg"
+              >
+                Chemical
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="16px"
+                    viewBox="0 -960 960 960"
+                    width="24px"
+                    fill="black"
+                  >
+                    <path
+                      d="M480-528 296-344l-56-56 240-240 240 240-56 56-184-184Z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="16px"
+                    viewBox="0 -960 960 960"
+                    width="24px"
+                    fill="black"
+                  >
+                    <path
+                      d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"
+                    />
+                  </svg>
+                </div>
+              </button>
+            </th>
+            <th>
+              <button
+                id="Vender"
+                class="flex items-center space-x-2 px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded-lg"
+                data-field="Vender"
+              >
+                Vender
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="16px"
+                    viewBox="0 -960 960 960"
+                    width="24px"
+                    fill="black"
+                  >
+                    <path
+                      d="M480-528 296-344l-56-56 240-240 240 240-56 56-184-184Z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="16px"
+                    viewBox="0 -960 960 960"
+                    width="24px"
+                    fill="black"
+                  >
+                    <path
+                      d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"
+                    />
+                  </svg>
+                </div>
+              </button>
+            </th>
+            <th>
+              <button
+                id="Density"
+                class="flex items-center space-x-2 px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded-lg"
+                data-field="Density"
+              >
+                Density
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="16px"
+                    viewBox="0 -960 960 960"
+                    width="24px"
+                    fill="black"
+                  >
+                    <path
+                      d="M480-528 296-344l-56-56 240-240 240 240-56 56-184-184Z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="16px"
+                    viewBox="0 -960 960 960"
+                    width="24px"
+                    fill="black"
+                  >
+                    <path
+                      d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"
+                    />
+                  </svg>
+                </div>
+              </button>
+            </th>
+            <th>
+              <button
+                id="Viscosity"
+                class="flex items-center space-x-2 px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded-lg"
+                data-field="Viscosity"
+              >
+                Viscosity
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="16px"
+                    viewBox="0 -960 960 960"
+                    width="24px"
+                    fill="black"
+                  >
+                    <path
+                      d="M480-528 296-344l-56-56 240-240 240 240-56 56-184-184Z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="16px"
+                    viewBox="0 -960 960 960"
+                    width="24px"
+                    fill="black"
+                  >
+                    <path
+                      d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"
+                    />
+                  </svg>
+                </div>
+              </button>
+            </th>
+            <th>
+              <button
+                id="Packaging"
+                class="flex items-center space-x-2 px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded-lg"
+                data-field="Packaging"
+              >
+                Packaging
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="16px"
+                    viewBox="0 -960 960 960"
+                    width="24px"
+                    fill="black"
+                  >
+                    <path
+                      d="M480-528 296-344l-56-56 240-240 240 240-56 56-184-184Z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="16px"
+                    viewBox="0 -960 960 960"
+                    width="24px"
+                    fill="black"
+                  >
+                    <path
+                      d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"
+                    />
+                  </svg>
+                </div>
+              </button>
+            </th>
+            <th>
+              <button
+                id="PackSize"
+                class="flex items-center space-x-2 px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded-lg"
+                data-field="PackSize"
+              >
+                PackSize
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="16px"
+                    viewBox="0 -960 960 960"
+                    width="24px"
+                    fill="black"
+                  >
+                    <path
+                      d="M480-528 296-344l-56-56 240-240 240 240-56 56-184-184Z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="16px"
+                    viewBox="0 -960 960 960"
+                    width="24px"
+                    fill="black"
+                  >
+                    <path
+                      d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"
+                    />
+                  </svg>
+                </div>
+              </button>
+            </th>
+            <th>
+              <button
+                id="Unit"
+                class="flex items-center space-x-2 px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded-lg"
+                data-field="Unit"
+              >
+                Unit
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="16px"
+                    viewBox="0 -960 960 960"
+                    width="24px"
+                    fill="black"
+                  >
+                    <path
+                      d="M480-528 296-344l-56-56 240-240 240 240-56 56-184-184Z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="16px"
+                    viewBox="0 -960 960 960"
+                    width="24px"
+                    fill="black"
+                  >
+                    <path
+                      d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"
+                    />
+                  </svg>
+                </div>
+              </button>
+            </th>
+            <th>
+              <button
+                id="Quantity"
+                class="flex items-center space-x-2 px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded-lg"
+                data-field="Quantity"
+              >
+                Quantity
+                <div class="flex flex-col justify-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="16px"
+                    viewBox="0 -960 960 960"
+                    width="16px"
+                    fill="black"
+                    class="ascending-icon"
+                  >
+                    <path
+                      d="M480-528 296-344l-56-56 240-240 240 240-56 56-184-184Z"
+                    />
+                  </svg>
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="16px"
+                    viewBox="0 -960 960 960"
+                    width="16px"
+                    fill="black"
+                    class="descending-icon"
+                  >
+                    <path
+                      d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"
+                    />
+                  </svg>
+                </div>
+              </button>
+            </th>
+          </tr>
+          <tr>
+            <th></th>
+            <th></th>
+            <th class="poppins-regular text-gray-600">g/m&sup2;</th>
+            <th class="poppins-regular text-gray-600">m&sup2;/s</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody class="poppins-extralight text-sm cursor-pointer"></tbody>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
