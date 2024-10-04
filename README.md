@@ -18,7 +18,21 @@ The icons are sized to w-6 to ensure they are visible yet non-intrusive. To enha
 - **JavaScript**: Handles table sorting logic.
 - **SVG Icons**: Provides scalable icons...
 
-## 4. Hosting 
+## 4. Functionalities
+
+- **Add a row:** Click on + icon to add a new row in table.
+
+- **Save the changes:** Click on save icon[second icon from the right].
+
+- **Move rows:** Select a row and click on up or down arrow to move the selected row towards top or bottom.
+
+- **Sort rows lexicographically & numerically:** Click on the column header to sort the table with respect to the column.
+
+- **Edit a cell data:** Double click on a particular cell to edit that data and click save.
+
+- **Download the table:** You can download the table instace in excel format by clicking on download icon[last icon].
+
+## 5. Hosting 
 The project is hosted on Netlify.
 ## Live Demo
 You can view the live demo of the project [here](https://rohan-table.netlify.app/).
