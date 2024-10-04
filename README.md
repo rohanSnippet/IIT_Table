@@ -20,7 +20,7 @@ The icons are sized to w-6 to ensure they are visible yet non-intrusive. To enha
 
 ## 4. Functionalities
 
-- **Add a row:** Click on + icon to add a new row in table.
+- **Add a row:** Click on + icon to add a new row in table and then click on save to save the input.
 
 - **Save the changes:** Click on save icon[second icon from the right].
 
